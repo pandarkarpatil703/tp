@@ -1,0 +1,299 @@
+<html>
+<head>
+    <title>Interview Practice - Ace Your Next Job Interview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        header .logo {
+            height: 40px;
+            margin-right: auto; /* Pushes the logo to the left */
+        }
+
+        header nav {
+            margin-left: auto; /* Pushes the navigation to the right */
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #1a73e8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #eef7ff;
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .hero .cta-btn {
+            padding: 12px 25px;
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero .cta-btn:hover {
+            background-color: #1558c0;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+            padding: 60px 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            display: flex;
+            gap: 30px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            flex: 1 1 30%;
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card img {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            background-color: #eef7ff;
+            padding: 60px 20px;
+            animation: slideIn 1.2s ease-out;
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .how-it-works ol {
+            list-style: decimal;
+            padding-left: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .how-it-works ol li {
+            margin-bottom: 20px;
+        }
+
+        /* Call-to-Action Section */
+        .cta {
+            background-color: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta .cta-btn {
+            background-color: #fff;
+            color: #000;
+            font-weight: 700;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .cta .cta-btn:hover {
+            background-color: #f9f9f9;
+            color: #000;
+            border-color: #bbb;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #202124;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://img.atom.com/story_images/visual_images/1697636838-750x450.jpg?class=show" alt="Interview Practice Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#start">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Practice for Your Dream Job Interview</h1>
+            <p>Simulate real interviews, get AI-driven feedback, and build confidence to ace the big day!</p>
+            <button class="cta-btn" onclick="startPractice()">Start Practicing</button>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature-card">
+                    <img src="questions-icon.png" alt="Questions">
+                    <h3>Custom Questions</h3>
+                    <p>Practice with industry-specific interview questions.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="microphone-icon.png" alt="Microphone">
+                    <h3>Voice Recognition</h3>
+                    <p>Answer questions using your microphone and receive feedback.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="feedback-icon.png" alt="Feedback">
+                    <h3>AI Feedback</h3>
+                    <p>Get insights into your performance and tips for improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Select your desired field or category of questions.</li>
+                <li>Enable microphone and camera access to simulate a real interview.</li>
+                <li>Receive AI-driven feedback and track your progress.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="start" class="cta">
+        <div class="container">
+            <h2>Ready to Ace Your Interview?</h2>
+            <button class="cta-btn" onclick="startPractice()">Get Started</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Interview Practice Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        async function startPractice() {
+            try {
+                await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                alert("Microphone and Camera access granted. Redirecting to practice page...");
+                window.location.href = 'practice.html';
+            } catch (err) {
+                alert("Permission denied. Please enable access to proceed.");
+                console.error(err);
+            }
+        }
+    </script>
+</body>
+</html>
